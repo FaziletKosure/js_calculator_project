@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,5 +6,86 @@
     <link rel="stylesheet" href="style.css" />
     <title>Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <div class="title">JavaScript Calculator</div>
+    <table border="1">
+      <tr>
+        <td><input type="button" value="C" onclick="clearit()" /></td>
+        <td colspan="3"><input type="text" id="edu" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="+" onclick="c('+')" /></td>
+        <td><input type="button" value="1" onclick="c('1')" /></td>
+        <td><input type="button" value="2" onclick="c('2')" /></td>
+        <td><input type="button" value="3" onclick="c('3')" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="-" onclick="c('-')" /></td>
+        <td><input type="button" value="4" onclick="c('4')" /></td>
+        <td><input type="button" value="5" onclick="c('5')" /></td>
+        <td><input type="button" value="6" onclick="c('6')" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="*" onclick="c('*')" /></td>
+        <td><input type="button" value="7" onclick="c('7')" /></td>
+        <td><input type="button" value="8" onclick="c('8')" /></td>
+        <td><input type="button" value="9" onclick="c('9')" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="/" onclick="c('/')" /></td>
+        <td><input type="button" value="." onclick="c('.')" /></td>
+        <td><input type="button" value="0" onclick="c('0')" /></td>
+        <td><input type="button" value="=" onclick="equals()" /></td>
+      </tr>
+    </table>
+    <script src="main.js"></script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="calculator">
+        <div class="input" id="inputField">0</div>
+
+        <div id="buttons">
+          <button id="clear" value="C">C</button>
+          <button id="divi" value="/">/</button>
+          <button id="multi" value="*">*</button>
+          <button id="sub" value="-">-</button>
+          <br />
+          <button id="seven" value="7">7</button>
+          <button id="eight" value="8">8</button>
+          <button id="nine" value="9">9</button>
+          <button id="add" value="+">+</button>
+          <br />
+          <button id="four" value="4">4</button>
+          <button id="five" value="5">5</button>
+          <button id="six" value="6">6</button>
+          <button id="equal" value="=">=</button>
+          <br />
+          <button id="one" value="1">1</button>
+          <button id="two" value="2">2</button>
+          <button id="three" value="3">3</button>
+          <br />
+          <button id="zero" value="0">0</button>
+          <button id="dot" value=".">.</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
